@@ -76,16 +76,27 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.all(20),
               child: Container(
+                alignment: Alignment.center,
                 height: 100,
-                width: 100,
+                width: 200,
                 decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    border: const Border(
-                      bottom: BorderSide(width: 5, color: Colors.red),
-                      top: BorderSide(width: 5, color: Colors.red),
-                      left: BorderSide(width: 5, color: Colors.red),
-                      right: BorderSide(width: 5, color: Colors.red),
-                    )),
+                  color: Theme.of(context).primaryColor,
+                  border: const Border(
+                    bottom: BorderSide(width: 5, color: Colors.red),
+                    top: BorderSide(width: 5, color: Colors.red),
+                    left: BorderSide(width: 5, color: Colors.red),
+                    right: BorderSide(width: 5, color: Colors.red),
+                  ),
+                ),
+                child: const Text(
+                  'Container',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             Padding(
@@ -99,6 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     topLeft: Radius.circular(15),
                     bottomRight: Radius.circular(15),
                   ),
+                ),
+                child: const Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                  size: 70,
                 ),
               ),
             ),
